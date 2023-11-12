@@ -1,4 +1,4 @@
-# Mq-Islamic-Local-Prayer-Times
+# Mq Islamic Local Prayer Times
 
 The Mq-Islamic-Local-Prayer-Times is a Home Assistant integration designed to calculate Islamic prayer times locally, without the need for an internet connection. It utilizes the calculations based on the method developed by Dr. Eng. Rinto Anugraha NQZ, S.Si., M.Si. All credit goes to him ( Learn more about [Dr. Rinto Anugraha's calculations](https://rintoanugraha.staff.ugm.ac.id/) ).
 
@@ -37,7 +37,9 @@ The configuration for the Mq-Islamic-Local-Prayer-Times integration can be compl
 - Ikhtiyat Isya: Safety time for Isha.
 
 # Installation
-To install the integration, extract Mq-Islamic-Local-Prayer-Times-main.zip and copy mq_praying_times directory along with everything in it to the custom_components directory of your Home Assistant. Typically, this directory can be found within your /config directory. For those using Hass.io, you can employ SAMBA for transferring the directory. In case you're utilizing Home Assistant Supervised, you might find the custom_components directory at /usr/share/hassio/homeassistant. If the custom_components directory doesn't exist, you'll have to create it first before moving the mq_praying_times directory and all included files into this location.
+- HACS: HACS -> Integrations -> three dots in the right upper corner -> Custom repositories. Paste https://github.com/AndroX55/Mq-Islamic-Local-Prayer-Times on Repository option box and Integration in Category.
+
+- Manually: download and extract Mq-Islamic-Local-Prayer-Times-main.zip and copy mq_praying_times directory along with everything in it to the custom_components directory of your Home Assistant. Typically, this directory can be found within your /config directory. For those using Hass.io, you can employ SAMBA for transferring the directory. In case you're utilizing Home Assistant Supervised, you might find the custom_components directory at /usr/share/hassio/homeassistant. If the custom_components directory doesn't exist, you'll have to create it first before moving the mq_praying_times directory and all included files into this location.
 
 # Usage
 The integration creates sensors such as sensor.ashar, sensor.maghrib, and so on. You can utilize these sensors as needed within your Home Assistant.
