@@ -2,12 +2,10 @@ import math
 from datetime import datetime, timedelta
 from homeassistant.helpers.entity import Entity
 from homeassistant.core import callback
-
 from homeassistant.helpers.dispatcher import async_dispatcher_connect, async_dispatcher_send
 
 from .const import SIGNAL_CONFIG_UPDATED
-
-from .config_flow import DOMAIN
+from .const import DOMAIN
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
     """Set up a prayer time sensor based on a config entry."""
@@ -40,8 +38,6 @@ async def async_setup_entry(hass, config_entry, async_add_entities):
     # Store the sensors in hass.data so we know they've been added
     hass.data[DOMAIN][unique_id] = sensors
     return True
-
-
 
 class PrayerTimeSensor(Entity):
     """Representation of a Prayer Time Sensor."""
@@ -129,7 +125,6 @@ class PrayerTimeSensor(Entity):
         elif self._prayer_name == "Imsak":
             self._state = prayer_times['imsak']
 
-        
 def calculate_prayer_times(zona, lintang, bujur, ketinggian, sudut_subuh, sudut_dhuha, sudut_isya, ikhtiyat_subuh, ikhtiyat_zuhur, ikhtiyat_ashar, ikhtiyat_maghrib, ikhtiyat_isya):
 
     # Get the current timestamp
