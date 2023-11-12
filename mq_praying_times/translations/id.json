@@ -15,11 +15,11 @@
           "sudut_subuh": "Sudut Subuh (15 - 20 derajat)",
           "sudut_dhuha": "Sudut Dhuha (3,5 - 5 derajat)",
           "sudut_isya": "Sudut Isya",
-          "ikhtiyat_subuh": "Ikhtiyat Subuh",
-          "ikhtiyat_zuhur": "Ikhtiyat Zuhur",
-          "ikhtiyat_ashar": "Ikhtiyat Ashar",
-          "ikhtiyat_maghrib": "Ikhtiyat Maghrib",
-          "ikhtiyat_isya": "Ikhtiyat Isya"
+          "ikhtiyat_subuh": "Penyesuaian Subuh",
+          "ikhtiyat_zuhur": "Penyesuaian Zuhur",
+          "ikhtiyat_ashar": "Penyesuaian Ashar",
+          "ikhtiyat_maghrib": "Penyesuaian Maghrib",
+          "ikhtiyat_isya": "Penyesuaian Isya"
         }
       }
     },
@@ -44,11 +44,11 @@
           "sudut_subuh": "Sudut Subuh (15 sampai 20)",
           "sudut_dhuha": "Sudut Dhuha (3,5 sampai 5)",
           "sudut_isya": "Sudut Isya",
-          "ikhtiyat_subuh": "Ikhtiyat Subuh",
-          "ikhtiyat_zuhur": "Ikhtiyat Zuhur",
-          "ikhtiyat_ashar": "Ikhtiyat Ashar",
-          "ikhtiyat_maghrib": "Ikhtiyat Maghrib",
-          "ikhtiyat_isya": "Ikhtiyat Isya"
+          "ikhtiyat_subuh": "Penyesuaian Subuh",
+          "ikhtiyat_zuhur": "Penyesuaian Zuhur",
+          "ikhtiyat_ashar": "Penyesuaian Ashar",
+          "ikhtiyat_maghrib": "Penyesuaian Maghrib",
+          "ikhtiyat_isya": "Penyesuaian Isya"
         }
       }
     },
