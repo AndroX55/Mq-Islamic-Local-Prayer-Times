@@ -6,6 +6,7 @@ This integration is ideal for users who require reliable, locally computed Islam
 
 # Features
 Local Calculation: Computes prayer times locally, ensuring reliability and privacy.
+
 Customizable Settings: Allows adjustments to calculation parameters for increased accuracy specific to your location.
 
 # Configuration
