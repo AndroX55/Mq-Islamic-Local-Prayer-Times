@@ -15,11 +15,11 @@
           "sudut_subuh": "Fajr Angle (15 to 20)",
           "sudut_dhuha": "Dhuha Angle (3.5 to 5)",
           "sudut_isya": "Isha Angle",
-          "ikhtiyat_subuh": "Fajr Precaution",
-          "ikhtiyat_zuhur": "Dhuhr Precaution",
-          "ikhtiyat_ashar": "Asr Precaution",
-          "ikhtiyat_maghrib": "Maghrib Precaution",
-          "ikhtiyat_isya": "Isha Precaution"
+          "ikhtiyat_subuh": "Fajr Adjustment",
+          "ikhtiyat_zuhur": "Dhuhr Adjustment",
+          "ikhtiyat_ashar": "Asr Adjustment",
+          "ikhtiyat_maghrib": "Maghrib Adjustment",
+          "ikhtiyat_isya": "Isha Adjustment"
         }
       }
     },
@@ -44,11 +44,11 @@
 				"sudut_subuh": "Fajr Angle (15 to 20)",
 				"sudut_dhuha": "Dhuha Angle (3.5 to 5)",
 				"sudut_isya": "Isha Angle",
-				"ikhtiyat_subuh": "Fajr Precaution",
-				"ikhtiyat_zuhur": "Dhuhr Precaution",
-				"ikhtiyat_ashar": "Asr Precaution",
-				"ikhtiyat_maghrib": "Maghrib Precaution",
-				"ikhtiyat_isya": "Isha Precaution"
+				"ikhtiyat_subuh": "Fajr Adjustment",
+				"ikhtiyat_zuhur": "Dhuhr Adjustment",
+				"ikhtiyat_ashar": "Asr Adjustment",
+				"ikhtiyat_maghrib": "Maghrib Adjustment",
+				"ikhtiyat_isya": "Isha Adjustment"
 			}
         }
       },
