@@ -6,8 +6,8 @@
   "dependencies": [],
   "codeowners": ["@mq"],
   "config_flow": true,
-  "documentation": "https://www.example.com",
+  "documentation": "https://github.com/AndroX55/Mq-Islamic-Local-Prayer-Times",
   "iot_class": "Local Polling",
-  "version": "1.0",
+  "version": "0.1.2",
   "icon": "mosque-outline"
 }
