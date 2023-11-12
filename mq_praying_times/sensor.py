@@ -149,9 +149,8 @@ def calculate_prayer_times(zona, lintang, bujur, ketinggian, sudut_subuh, sudut_
     SudutTgl = 2 * math.pi * (JulianLT - 2451545) / 365.25
     U = (JulianLT - 2451545) / 36525
     L0 = (280.46607 + 36000.7698 * U) * math.pi / 180
-    Deklinasi = 0.37877 + 23.264 * math.sin((57.297 * SudutTgl - 79.547) * math.pi / 180) + 0.3812 * math.sin(
-        (2 * 57.297 * SudutTgl - 82.682) * math.pi / 180
-    ) + 0.17132 * math.sin((3 * 57.297 * SudutTgl - 59.722) * math.pi / 180)
+    Deklinasi = 0.37877 + 23.264 * math.sin((57.297 * SudutTgl - 79.547) * math.pi / 180) + 0.3812 * math.sin((2 * 57.297 * SudutTgl - 82.682) * math.pi / 180) 
+    + 0.17132 * math.sin((3 * 57.297 * SudutTgl - 59.722) * math.pi / 180)
     EqOfTime = (
         (-1 * (1789 + 237 * U) * math.sin(L0)
          - (7146 - 62 * U) * math.cos(L0)
