@@ -48,4 +48,4 @@ For support, issues, or feature requests, please file an issue on the GitHub rep
 Contributions to the Mq-Islamic-Local-Prayer-Times integration are welcome. Please read our contributing guidelines for details on how to contribute.
 
 # License
-This project is licensed under [license type] - see the LICENSE.md file for details.
+This project is licensed under [GNU General Public License v3.0](https://github.com/AndroX55/Mq-Islamic-Local-Prayer-Times/blob/main/LICENSE) - see the LICENSE.md file for details.
