@@ -6,7 +6,7 @@
     "step": {
       "user": {
         "title": "Mq Islamic Local Prayer Times",
-		"description": "Configure your prayer times",
+		"description": "Configure prayer times",
         "data": {
           "zona": "Time Zone",
           "lintang": "Latitude",
@@ -35,7 +35,7 @@
 	  "step": {
         "options": {
 			"title": "Mq Islamic Local Prayer Times",
-            "description": "Adjust your prayer times",
+            "description": "Adjust prayer times",
 			"data": {
 				"zona": "Time Zone",
 				"lintang": "Latitude",
