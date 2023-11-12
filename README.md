@@ -9,7 +9,14 @@ Local Calculation: Computes prayer times locally, ensuring reliability and priva
 
 Customizable Settings: Allows adjustments to calculation parameters for increased accuracy specific to your location.
 
+# Installation
+- HACS: HACS -> Integrations -> three dots in the right upper corner -> Custom repositories. Paste https://github.com/AndroX55/Mq-Islamic-Local-Prayer-Times on Repository option box and Integration in Category.
+
+- Manually: download and extract Mq-Islamic-Local-Prayer-Times-main.zip and copy mq_praying_times directory along with everything in it to the custom_components directory of your Home Assistant. Typically, this directory can be found within your /config directory. For those using Hass.io, you can employ SAMBA for transferring the directory. In case you're utilizing Home Assistant Supervised, you might find the custom_components directory at /usr/share/hassio/homeassistant. If the custom_components directory doesn't exist, you'll have to create it first before moving the mq_praying_times directory and all included files into this location.
+
 # Configuration
+Configuration > Integrations > Add Integration > Mq Islamic Local Prayer Times.
+
 The configuration for the Mq-Islamic-Local-Prayer-Times integration can be completed during the initial installation, or it can be done at a later time. To reconfigure the integration, navigate to the Mq-Islamic-Local-Prayer-Times configuration page and click the 'Configure' button. Here, you will be able to adjust the following parameters:
 
 - Time Zone: Your time zone.
@@ -35,11 +42,6 @@ The configuration for the Mq-Islamic-Local-Prayer-Times integration can be compl
 - Ikhtiyat Maghrib: Safety time for Maghrib (sunset).
 
 - Ikhtiyat Isya: Safety time for Isha.
-
-# Installation
-- HACS: HACS -> Integrations -> three dots in the right upper corner -> Custom repositories. Paste https://github.com/AndroX55/Mq-Islamic-Local-Prayer-Times on Repository option box and Integration in Category.
-
-- Manually: download and extract Mq-Islamic-Local-Prayer-Times-main.zip and copy mq_praying_times directory along with everything in it to the custom_components directory of your Home Assistant. Typically, this directory can be found within your /config directory. For those using Hass.io, you can employ SAMBA for transferring the directory. In case you're utilizing Home Assistant Supervised, you might find the custom_components directory at /usr/share/hassio/homeassistant. If the custom_components directory doesn't exist, you'll have to create it first before moving the mq_praying_times directory and all included files into this location.
 
 # Usage
 The integration creates sensors such as sensor.ashar, sensor.maghrib, and so on. You can utilize these sensors as needed within your Home Assistant.
