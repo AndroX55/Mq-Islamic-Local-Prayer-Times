@@ -25,13 +25,13 @@ async def async_setup_entry(hass, config_entry, async_add_entities):
 
     # Create sensor entities based on the config_entry
     sensors = [
-        PrayerTimeSensor(config_entry.data, "Subuh1"),
-        PrayerTimeSensor(config_entry.data, "Dhuha1"),
-        PrayerTimeSensor(config_entry.data, "Zuhur1"),
-        PrayerTimeSensor(config_entry.data, "Ashar1"),
-        PrayerTimeSensor(config_entry.data, "Maghrib1"),
-        PrayerTimeSensor(config_entry.data, "Isya1"),
-        PrayerTimeSensor(config_entry.data, "Imsak1"),
+        PrayerTimeSensor(config_entry.data, "Subuh"),
+        PrayerTimeSensor(config_entry.data, "Dhuha"),
+        PrayerTimeSensor(config_entry.data, "Zuhur"),
+        PrayerTimeSensor(config_entry.data, "Ashar"),
+        PrayerTimeSensor(config_entry.data, "Maghrib"),
+        PrayerTimeSensor(config_entry.data, "Isya"),
+        PrayerTimeSensor(config_entry.data, "Imsak"),
     ]
 
     # Add sensor entities
@@ -114,20 +114,20 @@ class PrayerTimeSensor(Entity):
         )
 
         # Set the state based on the prayer name
-        if self._prayer_name == "Subuh1":
-            self._state = prayer_times['subuh1']
-        elif self._prayer_name == "Dhuha1":
-            self._state = prayer_times['dhuha1']
-        elif self._prayer_name == "Zuhur1":
-            self._state = prayer_times['zuhur1']
-        elif self._prayer_name == "Ashar1":
-            self._state = prayer_times['ashar1']
-        elif self._prayer_name == "Maghrib1":
-            self._state = prayer_times['maghrib1']
-        elif self._prayer_name == "Isya1":
-            self._state = prayer_times['isya1']
-        elif self._prayer_name == "Imsak1":
-            self._state = prayer_times['imsak1']
+        if self._prayer_name == "Subuh":
+            self._state = prayer_times['subuh']
+        elif self._prayer_name == "Dhuha":
+            self._state = prayer_times['dhuha']
+        elif self._prayer_name == "Zuhur":
+            self._state = prayer_times['zuhur']
+        elif self._prayer_name == "Ashar":
+            self._state = prayer_times['ashar']
+        elif self._prayer_name == "Maghrib":
+            self._state = prayer_times['maghrib']
+        elif self._prayer_name == "Isya":
+            self._state = prayer_times['isya']
+        elif self._prayer_name == "Imsak":
+            self._state = prayer_times['imsak']
 
         
 def calculate_prayer_times(zona, lintang, bujur, ketinggian, sudut_subuh, sudut_dhuha, sudut_isya, ikhtiyat_subuh, ikhtiyat_zuhur, ikhtiyat_ashar, ikhtiyat_maghrib, ikhtiyat_isya):
@@ -187,13 +187,13 @@ def calculate_prayer_times(zona, lintang, bujur, ketinggian, sudut_subuh, sudut_
         return '{:02d}:{:02d}'.format(hours, minutes)
 
     prayer_times = {
-        'subuh1': format_prayer_time(subuh),
-        'dhuha1': format_prayer_time(dhuha),
-        'zuhur1': format_prayer_time(zuhur),
-        'ashar1': format_prayer_time(ashar),
-        'maghrib1': format_prayer_time(maghrib),
-        'isya1': format_prayer_time(isya),
-        'imsak1': format_prayer_time(imsak),
+        'subuh': format_prayer_time(subuh),
+        'dhuha': format_prayer_time(dhuha),
+        'zuhur': format_prayer_time(zuhur),
+        'ashar': format_prayer_time(ashar),
+        'maghrib': format_prayer_time(maghrib),
+        'isya': format_prayer_time(isya),
+        'imsak': format_prayer_time(imsak),
     }
 
     return prayer_times
