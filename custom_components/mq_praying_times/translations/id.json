@@ -8,7 +8,7 @@
         "title": "Mq Islamic Local Prayer Times",
         "description": "Konfigurasi waktu sholat",
         "data": {
-          "zona": "Time Zone (7 untuk Indonesia)",
+          "zona": "Time Zone (WIB=7, WITA=8, WIT=9)",
           "lintang": "Lintang",
           "bujur": "Bujur",
           "ketinggian": "Ketinggian dari permukaan laut",
@@ -37,7 +37,7 @@
         "title": "Mq Islamic Local Prayer Times",
         "description": "Sesuaikan waktu sholat",
         "data": {
-          "zona": "Time Zone (7 untuk Indonesia)",
+          "zona": "Time Zone (WIB=7, WITA=8, WIT=9)",
           "lintang": "Lintang",
           "bujur": "Bujur",
           "ketinggian": "Ketinggian",
