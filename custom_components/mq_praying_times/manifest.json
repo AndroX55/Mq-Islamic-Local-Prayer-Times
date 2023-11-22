@@ -1,13 +1,12 @@
 {
   "domain": "mq_praying_times",
   "name": "Mq Islamic Local Prayer Times",
-  "version": "1.0",
   "requirements": [],
   "dependencies": [],
   "codeowners": ["@mq"],
   "config_flow": true,
   "documentation": "https://github.com/AndroX55/Mq-Islamic-Local-Prayer-Times",
   "iot_class": "Local Polling",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "icon": "mosque-outline"
 }
