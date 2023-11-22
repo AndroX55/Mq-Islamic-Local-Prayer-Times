@@ -14,6 +14,6 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     return True
 
 async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
-    # Optional: handle unloading a config entry, useful if you need to clean up resources
+    # Handle unloading a config entry
     return True
 
