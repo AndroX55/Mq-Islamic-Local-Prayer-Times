@@ -54,6 +54,3 @@ for instance value template as a trigger:
 
 # Support
 For support, issues, or feature requests, please file an issue on the GitHub repository.
-
-# License
-This project is licensed under [GNU General Public License v3.0](https://github.com/AndroX55/Mq-Islamic-Local-Prayer-Times/blob/main/LICENSE) - see the LICENSE.md file for details.
