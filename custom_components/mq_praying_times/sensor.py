@@ -177,7 +177,8 @@ def calculate_prayer_times(zona, lintang, bujur, ketinggian, sudut_subuh, sudut_
     def format_prayer_time(hour_float):
         """Converts hours since midnight into HH:MM format."""
         hours = int(hour_float)
-        minutes = int(round((hour_float - hours) * 60))  # Round to nearest minute
+        minutes = math.ceil((hour_float - hours) * 60)  # Round up the minutes
+        # minutes = int(round((hour_float - hours) * 60))
         return '{:02d}:{:02d}'.format(hours, minutes)
 
     prayer_times = {
