@@ -3,7 +3,7 @@
   "name": "Mq Islamic Local Prayer Times",
   "requirements": [],
   "dependencies": [],
-  "codeowners": ["@mq"],
+  "codeowners": ["@AndroX55"],
   "config_flow": true,
   "documentation": "https://github.com/AndroX55/Mq-Islamic-Local-Prayer-Times",
   "iot_class": "Local Polling",
