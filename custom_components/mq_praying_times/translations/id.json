@@ -19,7 +19,9 @@
           "ikhtiyat_zuhur": "Ikhtiyat Zuhur",
           "ikhtiyat_ashar": "Ikhtiyat Ashar",
           "ikhtiyat_maghrib": "Ikhtiyat Maghrib",
-          "ikhtiyat_isya": "Ikhtiyat Isya"
+          "ikhtiyat_isya": "Ikhtiyat Isya",
+          "ikhtiyat_syuruq": "Ikhtiyat Syuruq",
+          "ikhtiyat_dhuha": "Ikhtiyat Dhuha"
         }
       }
     },
@@ -48,7 +50,9 @@
           "ikhtiyat_zuhur": "Ikhtiyat Zuhur",
           "ikhtiyat_ashar": "Ikhtiyat Ashar",
           "ikhtiyat_maghrib": "Ikhtiyat Maghrib",
-          "ikhtiyat_isya": "Ikhtiyat Isya"
+          "ikhtiyat_isya": "Ikhtiyat Isya",
+          "ikhtiyat_syuruq": "Ikhtiyat Syuruq",
+          "ikhtiyat_dhuha": "Ikhtiyat Dhuha"
         }
       }
     },
