@@ -20,37 +20,37 @@ Settings -> Devices & services -> Add Integration -> Mq Islamic Local Prayer Tim
 The configuration for the Mq-Islamic-Local-Prayer-Times integration can be completed during the initial installation, or it can be done at a later time. To reconfigure the integration, navigate to the Mq-Islamic-Local-Prayer-Times configuration page and click the 'Configure' button. Here, you will be able to adjust the following parameters:
 
 - Time Zone: Your time zone.
-
 - Latitude: Latitude of your location.
-
 - Longitude: Longitude of your location.
-
 - Elevation: Elevation above sea level in meters.
-
 - Fajr Angle: Angle for Fajr (ussually beetween 15 - 20 degree).
-
 - Dhuha Angle: Angle for Dhuha (ussually beetween 3 - 5 degree).
-
 - Isha Angle: Angle for Isha (night).
-
 - Ikhtiyat Subuh: Safety time for Fajr.
-
 - Ikhtiyat Zuhur: Safety time for Zuhr (noon).
-
 - Ikhtiyat Ashar: Safety time for Asr (afternoon).
-
 - Ikhtiyat Maghrib: Safety time for Maghrib (sunset).
-
 - Ikhtiyat Isya: Safety time for Isha.
+- Ikhtiyat Syuruq: Safety time for Syuruq (sunrise).
+- Ikhtiyat Dhuha: Safety time for Dhuha.
 
 # Usage
-The integration creates sensor.imsak sensor.subuh sensor.zuhur sensor.ashar, sensor.maghrib and sensor.isya. You can utilize these sensors as needed within your Home Assistant.
+The integration creates sensors such:
+- sensor.imsak
+- sensor.subuh
+- sensor.zuhur
+- sensor.ashar
+- sensor.maghrib
+- sensor.isya
+- sensor.dhuha
+- sensor.syuruq
+- sensor.last_third
 
-for instance value template as a trigger: 
+You can utilize these sensors as needed within your Home Assistant, for instance value template as a trigger: 
 
 - {{ states('sensor.imsak') == as_timestamp(now()) | timestamp_custom('%H:%M') }}
 
-- {{ (as_timestamp(today_at(states('sensor.isya'))) - 600) <= as_timestamp(now()) < as_timestamp(today_at(states('sensor.isya'))) }}  (trigger 10 minutes before isha time)
+- {{ (as_timestamp(today_at(states('sensor.isya'))) - 600) == as_timestamp(now()) }}  (trigger 10 minutes before isha time)
 
 # Support
 For support, issues, or feature requests, please file an issue on the GitHub repository.
