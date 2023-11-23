@@ -8,18 +8,20 @@
         "title": "Mq Islamic Local Prayer Times",
 		"description": "Configure prayer times",
         "data": {
-          "zona": "Time Zone",
-          "lintang": "Latitude",
-          "bujur": "Longitude",
-          "ketinggian": "Elevation",
-          "sudut_subuh": "Fajr Angle (Ussually 15 to 20 degree)",
-          "sudut_dhuha": "Dhuha Angle (Ussually 3.5 to 5 degree)",
-          "sudut_isya": "Isha Angle",
-          "ikhtiyat_subuh": "Safety time for Fajr",
-          "ikhtiyat_zuhur": "Safety time for Dhuhr",
-          "ikhtiyat_ashar": "Safety time for Asr",
-          "ikhtiyat_maghrib": "Safety time for Maghrib",
-          "ikhtiyat_isya": "Safety time for Isha"
+		"zona": "Time Zone",
+		"lintang": "Latitude",
+		"bujur": "Longitude",
+		"ketinggian": "Elevation",
+		"sudut_subuh": "Fajr Angle (Ussually 15 to 20 degree)",
+		"sudut_dhuha": "Dhuha Angle (Ussually 3.5 to 5 degree)",
+		"sudut_isya": "Isha Angle",
+		"ikhtiyat_subuh": "Safety time for Fajr",
+		"ikhtiyat_zuhur": "Safety time for Dhuhr",
+		"ikhtiyat_ashar": "Safety time for Asr",
+		"ikhtiyat_maghrib": "Safety time for Maghrib",
+		"ikhtiyat_isya": "Safety time for Isha",
+		"ikhtiyat_syuruq": "Safety time for Syuruq",
+		"ikhtiyat_dhuha": "Safety time for Dhuha"
         }
       }
     },
@@ -44,11 +46,13 @@
 				"sudut_subuh": "Fajr Angle (Ussually 15 to 20 degree)",
 				"sudut_dhuha": "Dhuha Angle (Ussually 3.5 to 5 degree)",
 				"sudut_isya": "Isha Angle",
-			        "ikhtiyat_subuh": "Safety time for Fajr",
-			        "ikhtiyat_zuhur": "Safety time for Dhuhr",
-			        "ikhtiyat_ashar": "Safety time for Asr",
-			        "ikhtiyat_maghrib": "Safety time for Maghrib",
-			        "ikhtiyat_isya": "Safety time for Isha"
+				"ikhtiyat_subuh": "Safety time for Fajr",
+				"ikhtiyat_zuhur": "Safety time for Dhuhr",
+				"ikhtiyat_ashar": "Safety time for Asr",
+				"ikhtiyat_maghrib": "Safety time for Maghrib",
+				"ikhtiyat_isya": "Safety time for Isha",
+				"ikhtiyat_syuruq": "Safety time for Syuruq",
+				"ikhtiyat_dhuha": "Safety time for Dhuha"
 			}
         }
       },
