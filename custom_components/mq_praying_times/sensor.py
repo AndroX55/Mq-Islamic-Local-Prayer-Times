@@ -130,7 +130,11 @@ class PrayerTimeSensor(Entity):
         elif self._prayer_name == "Last Third":
             self._state = prayer_times['last_third']
 
-def calculate_prayer_times(zona, lintang, bujur, ketinggian, sudut_subuh, sudut_dhuha, sudut_isya, ikhtiyat_subuh, ikhtiyat_zuhur, ikhtiyat_ashar, ikhtiyat_maghrib, ikhtiyat_isya, ikhtiyat_syuruq, ikhtiyat_dhuha):
+def calculate_prayer_times(
+	zona, lintang, bujur, ketinggian, sudut_subuh, sudut_dhuha, 
+	sudut_isya, ikhtiyat_subuh, ikhtiyat_zuhur, ikhtiyat_ashar, ikhtiyat_maghrib, 
+	ikhtiyat_isya, ikhtiyat_syuruq, ikhtiyat_dhuha
+):
 
 	# Get the current timestamp
 	current_time = datetime.now()
