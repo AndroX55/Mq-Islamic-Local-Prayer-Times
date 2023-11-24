@@ -21,8 +21,8 @@ class MQPrayingTimesConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         vol.Required('ikhtiyat_ashar', default=2): vol.Coerce(int),
         vol.Required('ikhtiyat_maghrib', default=2): vol.Coerce(int),
         vol.Required('ikhtiyat_isya', default=2): vol.Coerce(int),
-		vol.Required('ikhtiyat_syuruq', default=2): vol.Coerce(int),
-		vol.Required('ikhtiyat_dhuha', default=2): vol.Coerce(int),
+	vol.Required('ikhtiyat_syuruq', default=2): vol.Coerce(int),
+	vol.Required('ikhtiyat_dhuha', default=2): vol.Coerce(int),
     })
 
     async def async_step_user(self, user_input=None):
@@ -74,20 +74,20 @@ class MQPrayingTimesOptionsFlowHandler(config_entries.OptionsFlow):
         
         # Define the configuration parameters along with their types and default values
         config_params = {
-            'zona': int,
-            'lintang': float,
-            'bujur': float,
-            'ketinggian': int,
-            'sudut_subuh': float,
-            'sudut_dhuha': float,
-            'sudut_isya': float,
-            'ikhtiyat_subuh': int,
-            'ikhtiyat_zuhur': int,
-            'ikhtiyat_ashar': int,
-            'ikhtiyat_maghrib': int,
-            'ikhtiyat_isya': int,
-			'ikhtiyat_syuruq': int,
-			'ikhtiyat_dhuha': int
+		'zona': int,
+		'lintang': float,
+		'bujur': float,
+		'ketinggian': int,
+		'sudut_subuh': float,
+		'sudut_dhuha': float,
+		'sudut_isya': float,
+		'ikhtiyat_subuh': int,
+		'ikhtiyat_zuhur': int,
+		'ikhtiyat_ashar': int,
+		'ikhtiyat_maghrib': int,
+		'ikhtiyat_isya': int,
+		'ikhtiyat_syuruq': int,
+		'ikhtiyat_dhuha': int
         }
 
         # Build the data schema dynamically based on the config parameters
