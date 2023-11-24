@@ -29,8 +29,8 @@ async def async_setup_entry(hass, config_entry, async_add_entities):
         PrayerTimeSensor(config_entry.data, "Maghrib"),
         PrayerTimeSensor(config_entry.data, "Isya"),
         PrayerTimeSensor(config_entry.data, "Imsak"),
-		PrayerTimeSensor(config_entry.data, "Syuruq"),
-		PrayerTimeSensor(config_entry.data, "Last Third")
+	PrayerTimeSensor(config_entry.data, "Syuruq"),
+	PrayerTimeSensor(config_entry.data, "Last Third")
     ]
 
     # Add sensor entities
@@ -104,12 +104,10 @@ class PrayerTimeSensor(Entity):
         ikhtiyat_dhuha = self._config.get('ikhtiyat_dhuha')
 
         # Calculate prayer times
-        prayer_times = await self.hass.async_add_executor_job(calculate_prayer_times,
-            zona, lintang, bujur, ketinggian, 
-            sudut_subuh, sudut_dhuha, sudut_isya, 
-            ikhtiyat_subuh, ikhtiyat_zuhur, 
-            ikhtiyat_ashar, ikhtiyat_maghrib, ikhtiyat_isya,
-			ikhtiyat_syuruq, ikhtiyat_dhuha
+        prayer_times = await self.hass.async_add_executor_job(
+		calculate_prayer_times, zona, lintang, bujur, ketinggian, 
+		sudut_subuh, sudut_dhuha, sudut_isya, ikhtiyat_subuh, ikhtiyat_zuhur, 
+		ikhtiyat_ashar, ikhtiyat_maghrib, ikhtiyat_isya, ikhtiyat_syuruq, ikhtiyat_dhuha
         )
 
         # Set the state based on the prayer name
