@@ -10,8 +10,7 @@ Local Calculation: Computes prayer times locally, ensuring reliability and priva
 Customizable Settings: Allows adjustments to calculation parameters for increased accuracy specific to your location.
 
 # Installation
-- HACS: HACS -> Integrations -> three dots in the right upper corner -> Custom repositories. Paste https://github.com/AndroX55/Mq-Islamic-Local-Prayer-Times on Repository option box and Integration in Category.
-
+- HACS: HACS -> Integrations -> three dots in the right upper corner -> Custom repositories. Copy and paste below link on Repository option box and select Integration in Category box. <pre><code>https://github.com/AndroX55/Mq-Islamic-Local-Prayer-Times</pre></code>
 - Manually: download and extract Mq-Islamic-Local-Prayer-Times-main.zip and copy mq_praying_times directory along with everything in it to the custom_components directory of your Home Assistant. Typically, this directory can be found within your /config directory. For those using Hass.io, you can employ SAMBA for transferring the directory. In case you're utilizing Home Assistant Supervised, you might find the custom_components directory at /usr/share/hassio/homeassistant. If the custom_components directory doesn't exist, you'll have to create it first before moving the mq_praying_times directory and all included files into this location.
 
 # Configuration
