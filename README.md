@@ -49,7 +49,7 @@ You can utilize these sensors as needed within your Home Assistant, for instance
 
 - {{ states('sensor.imsak') == as_timestamp(now()) | timestamp_custom('%H:%M') }}
 
-- {{ (as_timestamp(today_at(states('sensor.isya'))) - 600) == as_timestamp(now()) }}  (trigger 10 minutes before isha time)
+- {{ (as_timestamp(today_at(states('sensor.zuhur'))) - 600) | timestamp_custom("%H:%M") == now().strftime('%H:%M') }}  (trigger 10 minutes before zuhur time)
 
 # Support
 For support, issues, or feature requests, please file an issue on the GitHub repository.
