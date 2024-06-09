@@ -1,7 +1,7 @@
 {
   "domain": "mq_praying_times",
   "name": "Mq Islamic Local Prayer Times",
-  "requirements": [],
+  "requirements": ["hijridate"],
   "dependencies": [],
   "codeowners": ["@AndroX55"],
   "config_flow": true,
