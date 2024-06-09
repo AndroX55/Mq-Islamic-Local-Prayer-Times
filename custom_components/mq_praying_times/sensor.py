@@ -1,11 +1,11 @@
 import math
 from datetime import datetime, timedelta
+from hijridate import Hijri, Gregorian
 from homeassistant.helpers.entity import Entity
 from homeassistant.core import callback
 from homeassistant.helpers.dispatcher import async_dispatcher_connect, async_dispatcher_send
 
-from .const import SIGNAL_CONFIG_UPDATED
-from .const import DOMAIN
+from .const import SIGNAL_CONFIG_UPDATED, DOMAIN
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
     """Set up a prayer time sensor based on a config entry."""
@@ -30,7 +30,8 @@ async def async_setup_entry(hass, config_entry, async_add_entities):
         PrayerTimeSensor(config_entry.data, "Isya"),
         PrayerTimeSensor(config_entry.data, "Imsak"),
 	PrayerTimeSensor(config_entry.data, "Syuruq"),
-	PrayerTimeSensor(config_entry.data, "Last Third")
+        PrayerTimeSensor(config_entry.data, "Last Third"),
+        HijriDateSensor(config_entry.data)
     ]
 
     # Add sensor entities
@@ -129,6 +130,54 @@ class PrayerTimeSensor(Entity):
             self._state = prayer_times['syuruq']
         elif self._prayer_name == "Last Third":
             self._state = prayer_times['last_third']
+
+class HijriDateSensor(Entity):
+    """Representation of a Hijri Date Sensor."""
+
+    def __init__(self, config):
+        """Initialize the sensor."""
+        self._name = "Hijri Date"
+        self._state = None
+
+    @property
+    def unique_id(self):
+        return "hijri_date_sensor"
+
+    @property
+    def name(self):
+        return self._name
+
+    @property
+    def state(self):
+        return self._state
+
+    @property
+    def icon(self):
+        return "mdi:calendar-month-outline"
+
+    async def async_update(self):
+        now = datetime.now()
+        hijri_date = Gregorian(now.year, now.month, now.day).to_hijri()
+        month_name = self.get_hijri_month_name(hijri_date.month)
+        self._state = f"{hijri_date.day} {month_name} {hijri_date.year}H"
+        
+    def get_hijri_month_name(self, month):
+        """Return Hijri month name based on its numeric value."""
+        hijri_month_names = [
+            "Muharram",
+            "Safar",
+            "Rabi'ul Awwal",
+            "Rabi'ul Akhir",
+            "Jumadil Awwal",
+            "Jumadil Akhir",
+            "Rajab",
+            "Sya'ban",
+            "Ramadhan",
+            "Syawwal",
+            "Dzulqo'dah",
+            "Dzulhijjah",
+        ]
+        return hijri_month_names[month - 1] if 1 <= month <= 12 else None
 
 def calculate_prayer_times(
 	zona, lintang, bujur, ketinggian, sudut_subuh, sudut_dhuha, 
