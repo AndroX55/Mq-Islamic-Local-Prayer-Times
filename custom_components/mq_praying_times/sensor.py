@@ -1,6 +1,5 @@
 import math
 from datetime import datetime, timedelta
-from hijridate import Hijri, Gregorian
 from homeassistant.helpers.entity import Entity
 from homeassistant.core import callback
 from homeassistant.helpers.dispatcher import async_dispatcher_connect, async_dispatcher_send
