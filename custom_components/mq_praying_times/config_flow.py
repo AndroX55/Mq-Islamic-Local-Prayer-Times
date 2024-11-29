@@ -21,8 +21,8 @@ class MQPrayingTimesConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         vol.Required('ikhtiyat_ashar', default=2): vol.Coerce(int),
         vol.Required('ikhtiyat_maghrib', default=2): vol.Coerce(int),
         vol.Required('ikhtiyat_isya', default=2): vol.Coerce(int),
-	vol.Required('ikhtiyat_syuruq', default=2): vol.Coerce(int),
-	vol.Required('ikhtiyat_dhuha', default=2): vol.Coerce(int),
+        vol.Required('ikhtiyat_syuruq', default=2): vol.Coerce(int),
+        vol.Required('ikhtiyat_dhuha', default=2): vol.Coerce(int),
     })
 
     async def async_step_user(self, user_input=None):
@@ -38,7 +38,7 @@ class MQPrayingTimesConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         errors = {}
 
         if user_input is not None:
-            # Validation logic
+            # Validate
             if not -90 <= user_input['lintang'] <= 90:
                 errors['lintang'] = 'invalid_latitude'
             if not -180 <= user_input['bujur'] <= 180:
@@ -98,7 +98,7 @@ class MQPrayingTimesOptionsFlowHandler(config_entries.OptionsFlow):
         data_schema = vol.Schema(data_schema_fields)
 
         if user_input is not None:
-            # Validation logic
+            # Validate
             if not -90 <= user_input['lintang'] <= 90:
                 errors['lintang'] = 'invalid_latitude'
             if not -180 <= user_input['bujur'] <= 180:

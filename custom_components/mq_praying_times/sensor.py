@@ -29,8 +29,8 @@ async def async_setup_entry(hass, config_entry, async_add_entities):
         PrayerTimeSensor(config_entry.data, "Maghrib"),
         PrayerTimeSensor(config_entry.data, "Isya"),
         PrayerTimeSensor(config_entry.data, "Imsak"),
-	PrayerTimeSensor(config_entry.data, "Syuruq"),
-	PrayerTimeSensor(config_entry.data, "Last Third")
+		PrayerTimeSensor(config_entry.data, "Syuruq"),
+		PrayerTimeSensor(config_entry.data, "Last Third")
     ]
 
     # Add sensor entities
@@ -238,7 +238,7 @@ def calculate_prayer_times(
 		)
 	)
 	imsak = subuh - 10 / 60
-	syuruq = Terbit - ikhtiyat_syuruq / 60
+	syuruq = Terbit + ikhtiyat_syuruq / 60
 	last_third = subuh - (subuh + (24 - maghrib)) / 3
 	
 	def format_prayer_time(hour_float, round_up=True):
