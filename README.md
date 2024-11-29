@@ -44,7 +44,6 @@ The integration creates sensors such:
 - sensor.dhuha
 - sensor.syuruq
 - sensor.last_third
-- sensor.hijri_date
 
 You can utilize these sensors as needed within your Home Assistant, for instance value template as a trigger: 
 
