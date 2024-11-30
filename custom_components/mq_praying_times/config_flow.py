@@ -21,7 +21,7 @@ class MQPrayingTimesConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         vol.Required('ikhtiyat_ashar', default=2): vol.Coerce(int),
         vol.Required('ikhtiyat_maghrib', default=2): vol.Coerce(int),
         vol.Required('ikhtiyat_isya', default=2): vol.Coerce(int),
-        vol.Required('ikhtiyat_syuruq', default=2): vol.Coerce(int),
+        vol.Required('ikhtiyat_syuruq', default=-2): vol.Coerce(int),
         vol.Required('ikhtiyat_dhuha', default=2): vol.Coerce(int),
     })
 
