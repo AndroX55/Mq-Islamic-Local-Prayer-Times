@@ -58,12 +58,9 @@ class MQPrayingTimesConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     @staticmethod
     @callback
     def async_get_options_flow(config_entry):
-        return MQPrayingTimesOptionsFlowHandler(config_entry)
+        return MQPrayingTimesOptionsFlowHandler()
 
 class MQPrayingTimesOptionsFlowHandler(config_entries.OptionsFlow):
-    def __init__(self, config_entry):
-        self.config_entry = config_entry
-
     async def async_step_init(self, user_input=None):
         # Initialize the options flow
         return await self.async_step_options()
